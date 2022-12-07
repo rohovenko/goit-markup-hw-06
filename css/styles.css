@@ -240,6 +240,80 @@ color: #FFFFFF;
 }
 
 
+
+.subscribe-box{
+    display: flex;
+    margin-top: 20px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    gap: 12px;
+}
+
+.subscribe-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+    color: #FFFFFF;
+}
+
+.subscribe-form{
+    width: 358px;
+    height: 50px;
+    outline-offset: -1px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-form:focus {
+outline-color: rgba(255, 255, 255, 0.3);
+background-color: ffffff;
+}
+
+.subscribe-button{
+        display: inline-block;
+        border: 1px transparent;
+        width: 200px;
+        height: 50px;
+        border-radius: 4px;
+        padding: 0;
+        color: var(--secondary-text-color);
+        background-color: var(--accent-color);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        
+}
+
+.subscribe{
+    position: relative;
+}
+
+.subscribe-icon{
+        position: absolute;
+        top: 50%;
+        right: 18px;
+        transform: translateY(-50%);
+
+        fill: rgba(255, 255, 255, 1);
+            
+           
+}
+
+
+
+
+
 /* __________________герой_________________________ */
 .hero-title{
     width: 696px;
@@ -596,12 +670,22 @@ border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         width: 528px;
         height: 581px;
+        padding: 40px;
         background-color: #ffffff;
         box-shadow: 
         0px 1px 3px rgba(0, 0, 0, 0.12), 
         0px 1px 1px rgba(0, 0, 0, 0.14), 
         0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
+    }
+
+        .modal-form-group{
+            margin-bottom: 20px;
+        }
+
+    .modal-form-btn{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
     }
 
     .modal-btn{
@@ -625,5 +709,143 @@ border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .modal-btn{
-        fill: currentColor;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    .modal-btn:hover {
+        fill: var(--accent-color);
+    }
+
+    .modal-label{
+        display: block;
+        text-align: center;
+        margin-bottom: 12px;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+
+        color: #212121;
+    }
+
+    .modal-form-label{
+        display: block;
+        margin-bottom: 4px;
+
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+
+        color: #757575;
+    }
+
+    .mofal-form-wrapper{
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .modal-form-field{
+        width: 100%;
+        height: 40px;
+        padding-left: 42px;
+        padding-right: 42px;
+
+
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        outline: 1px solid transparent;
+        outline-offset: -1px;
+        transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    }
+
+    .modal-form-field:focus {
+        outline-color: var(--accent-color);
+    }
+
+    .modal-form-icon{
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .modal-form-field:focus + .modal-form-icon {
+        fill: var(--accent-color);
+    }
+
+    .modal-form-message{
+        display: block;
+        width: 100%;
+        height: 120px;
+        padding: 16px 20px;
+        
+
+        font-size: 14px;
+
+        resize: none;
+
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+
+        outline: 1px solid transparent;
+        outline-offset: -1px;
+        transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+        .modal-form-message:focus {
+        outline-color: var(--accent-color);
+        }
+
+        .modal-form-agreement{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 7px;
+            margin-bottom: 30px;
+        }
+
+        .modal-form-agreement-desc{
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+
+            user-select: none;
+    
+            color: #757575;
+        }
+
+        .modal-form-agreement-link{
+            color: var(--accent-color);
+        }
+
+        .modal-form-checkbox{
+            appearance: none;
+            width: 16px;
+            height: 15px;
+            
+            outline: 2px solid transparent;
+            outline-offset: -2px;
+            border: 2px solid rgba(33, 33, 33, 1);
+            border-radius: 2px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 0;
+            transition: 
+            background-size 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .modal-form-checkbox:checked {
+            outline-color: var(--accent-color);
+            background-color: var(--accent-color);
+            background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
+            background-size: 11px 8px;
+        }
+
+
+
+    
