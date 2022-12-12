@@ -236,7 +236,16 @@ color: #FFFFFF;
 .contacts-container{
     display: flex;
     align-items: baseline;
-    gap: 70px;
+    
+}
+
+.contacts-box{
+    min-width: 231px;
+    margin-right: 70px;
+}
+
+.link-box{
+    margin-right: 93px;
 }
 
 
@@ -266,6 +275,7 @@ color: #FFFFFF;
     height: 50px;
     outline-offset: -1px;
     padding: 15px 16px;
+    color: var(--secondary-text-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -279,12 +289,15 @@ background-color: ffffff;
 }
 
 .subscribe-button{
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
         border: 1px transparent;
         width: 200px;
         height: 50px;
         border-radius: 4px;
-        padding: 0;
+        padding: 10px 28px;
         color: var(--secondary-text-color);
         background-color: var(--accent-color);
         font-weight: 700;
@@ -295,22 +308,10 @@ background-color: ffffff;
         
 }
 
-.subscribe{
-    position: relative;
-}
-
 .subscribe-icon{
-        position: absolute;
-        top: 50%;
-        right: 18px;
-        transform: translateY(-50%);
-
-        fill: rgba(255, 255, 255, 1);
-            
-           
+    fill: var(--secondary-text-color);
+    
 }
-
-
 
 
 
@@ -712,7 +713,8 @@ border 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .modal-btn:hover {
+    .modal-btn:hover,
+    .modal-btn:focus {
         fill: var(--accent-color);
     }
 
